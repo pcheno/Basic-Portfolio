@@ -3,17 +3,18 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Paul Chenoweth contact</title>
+    <title>Paul Chenoweth-contact</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
-   
+  
 </head>
 <body>
     <header>
-        <div class="nmbox" ><h2>Paul Chenoweth</h2></div>
+        <div class="nmbox" ><h2 style="padding:30px">Paul Chenoweth</h2></div>
         
         <nav>
-            <ul>
+            <ul style="padding:20px">
                 <li><a class="astyle" href="index.html">About</a></li>
                 <li><a class="astyle" href="portfolio.html">Portfolio</a></li>
                 <li><a class="astyle" href="contact.html">Contact</a></li>
@@ -22,21 +23,28 @@
     
     </header>
     <section>
-        <h2 class="aboutme">Contact</h2>
-        <article>
-          <label for="name">Name</label>
-          <input type="text" id="name" required size="80"
-            placeholder="John Smith">
-       
-               
-                       
-        </article>
+        <h2 class="aboutme">Contact Me</h2>
+        <div class="contactme">
+           
+            <form action="/action_page.php">
+                Name<br>
+                <input type="text" name="fullname" value="John Smith">
+                <br><br>
+                Email<br>
+                <input type="text" name="Email" value="example@gmail.com">
+                <br><br>
+                Message <br>
+                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                <br><br>
+                <input class="isubmit" type="submit" value="Submit">
+            </form> 
+        </div>
     </section>
 
     <aside>
-        <h2 >Connect with Me</h2>
+        <h2 class="aboutme" >Connect with Me</h2>
         <div class="connections">
-      
+        
             <a href="https://github.com/pcheno">
                  <img src="assets/images/github.png" alt="github" style="width:42px;height:42px;border:0">
             </a>
@@ -46,7 +54,7 @@
             <a href="https://stackoverflow.com/cv/pcheno">
                 <img src="assets/images/stackoverflow.png" alt="github" style="width:42px;height:42px;border:0">
            </a>  
-           
+
         </div>
     </aside>
 
